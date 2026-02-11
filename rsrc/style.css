@@ -7,11 +7,9 @@
 
 
 
-
 /* Reset */
 * { box-sizing: border-box; margin:0; }
 img { max-width: 100%; display: block; object-fit: cover; }
-
 
 
 
@@ -27,7 +25,6 @@ h3{
 
 
 
-
 /* Couleur */
 
 html {
@@ -37,9 +34,37 @@ html {
 
 
 
-
 /* Géometrie & Mise en page */
 
 body{
 	padding: 1rem;
+}
+
+
+/* Navigation */
+#siteNav{
+	position: fixed;
+	top:0;
+	right:0;
+	background: rgb(164, 164, 164);
+	color: #fff;
+	padding: 1rem;
+	display: flex;
+	gap: 1rem;
+}
+
+#siteNav a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#siteNav a:first-child::before {
+	content: "⇦ ";
+}
+#siteNav a:last-child::after{
+	content: " ⇨";
+}
+#siteNav a:hover{
+	text-decoration: underline;
+	text-shadow: 0 0 0.5rem #fff;
 }
